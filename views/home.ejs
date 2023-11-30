@@ -2,7 +2,7 @@
 
 <style>
   body {
-    background-color: #C7E1BA; /* Set a light background color */
+    background-color: #C7E1BA;
     text-align: center;
     padding: 50px;
   }
@@ -10,18 +10,24 @@
   .welcome {
     margin-top: 50px;
     padding: 20px;
-    background-color: #fffaca; /* Set a white background for the welcome box */
-    border-radius: 10px; /* Add some border-radius for rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    background-color: #fffaca;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 
   h1 {
-    font-size: 3em; /* Set a larger font size for the title */
-    color: #000000; /* Set a clinic-like color for the title */
+    font-size: 3em;
+    color: #000000;
   }
 
   h3 {
-    color: #555; /* Set a darker color for the subtitle */
+    color: #555;
+  }
+
+  .clinic-image {
+    margin-top: 20px;
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Maintain the image's aspect ratio */
   }
 </style>
 
@@ -30,5 +36,7 @@
   <h3>Your Trusted Healthcare Partner</h3>
   <!-- Add more content or decorations as needed -->
 </div>
+
+<img class="clinic-image" src="images/park.jpg" alt="Clinic Image">
 
 <%- include("partials/footer"); -%>
