@@ -1,0 +1,12 @@
+node_modules
+.env
+*.code-workspace
+public/script.js
+public/main.css
+public/main.js
+public/DataHandler.js
+public/build.js
+server/query.js
+local
+app.cjs
+app.js
