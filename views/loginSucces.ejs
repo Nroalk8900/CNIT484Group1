@@ -10,14 +10,14 @@
   // Function to trigger the file download
   function downloadFile() {
     // Replace 'path/to/your/secretfile.txt' with the actual path to your secret file
-    const fileUrl = 'images/Roasted_Tomato_Salsa_with_Homemade_Chips';
+    const fileUrl = 'images/Roasted_Tomato_Salsa_with_Homemade_Chips.png';
 
     // Create a hidden link element
     const link = document.createElement('a');
     link.href = fileUrl;
 
     // Specify the download attribute with the desired file name
-    link.download = 'Roasted_Tomato_Salsa_with_Homemade_Chips';
+    link.download = 'Roasted_Tomato_Salsa_with_Homemade_Chips.png';
 
     // Append the link to the document
     document.body.appendChild(link);
