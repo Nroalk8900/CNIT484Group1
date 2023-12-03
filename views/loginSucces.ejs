@@ -1,6 +1,34 @@
 <%- include("partials/header"); -%>
 
-<h1>You have logged in succesfully!</h1>
+<h1>You have logged in successfully!</h1>
 
+<button id="downloadButton">Download Secret Information</button>
 
 <%- include("partials/footer"); -%>
+
+<script>
+  // Function to trigger the file download
+  function downloadFile() {
+    // Replace 'path/to/your/secretfile.txt' with the actual path to your secret file
+    const fileUrl = 'images/Roasted_Tomato_Salsa_with_Homemade_Chips';
+
+    // Create a hidden link element
+    const link = document.createElement('a');
+    link.href = fileUrl;
+
+    // Specify the download attribute with the desired file name
+    link.download = 'Roasted_Tomato_Salsa_with_Homemade_Chips';
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger a click event on the link
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+  }
+
+  // Attach the downloadFile function to the button's click event
+  document.getElementById('downloadButton').addEventListener('click', downloadFile);
+</script>
